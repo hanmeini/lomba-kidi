@@ -1,0 +1,46 @@
+
+  /* Definisi animasi untuk getaran vertikal */
+  @keyframes shake-vertical {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px); /* Atur jarak getaran */
+    }
+  }
+
+  /* Terapkan animasi ke gambar */
+  .shake-img {
+    animation: shake-vertical 2s ease-in-out infinite;
+  }
+  .swiper-button-next{
+    font-weight: 600;
+  }
+  .swiper-button-prev{
+    font-weight: 600;
+
+  }
+  /*tombol swiper*/
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: #3e3e3e; /* Set gray color */
+    border-radius: 50%;        /* Make it circular */
+    width: 50px;               /* Adjust width */
+    height: 50px;              /* Adjust height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;              /* Set icon color to white */
+    }
+
+/* Optional: Add hover effect for better user experience */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: #8a8a8a; /* Darker gray on hover */
+}
+.card-title,
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-weight: 600; /* Make text bold with weight 600 */
+    font-size: 14px;
+}
